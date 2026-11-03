@@ -1,5 +1,5 @@
 /* =========================================================================
-   ビオ整体院 岐阜院（育毛治療院）LP — interactions
+   ビオ整体院 庄内通院（育毛治療院）LP — interactions
    ========================================================================= */
 (function () {
   "use strict";
@@ -9,7 +9,7 @@
      本番では下記 LINE_URL を実際の URL（例: "https://lin.ee/xxxxxxx"）に
      変更してください。空文字のままだと href="#" のままになります。
      -------------------------------------------------------------- */
-  var LINE_URL = "https://line.me/R/ti/p/@152nmnyw?ts=06051045&oat_content=url"; // LINE 公式アカウント追加 URL
+  var LINE_URL = "https://line.me/R/ti/p/@100ddnpr?oat_content=url&ts=08152225"; // LINE 公式アカウント追加 URL
 
   if (LINE_URL) {
     document.querySelectorAll(".js-line").forEach(function (el) {
