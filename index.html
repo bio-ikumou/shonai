@@ -29,6 +29,7 @@
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '840301142372110');
+  fbq('init', '29563516259920315');
   fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
@@ -39,7 +40,10 @@
   <script>
   document.addEventListener('click', function (e) {
     var el = e.target && e.target.closest ? e.target.closest('.js-line, .js-hpb') : null;
-    if (el && window.fbq) { fbq('track', 'Lead'); }
+    if (el && window.fbq) {
+      fbq('track', 'Lead');
+      if (el.classList.contains('js-line')) { fbq('trackSingle', '29563516259920315', 'CompleteRegistration'); }
+    }
   });
   </script>
 </head>
