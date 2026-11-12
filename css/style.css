@@ -547,3 +547,17 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 719px) {
   .cond-img { width: calc(100% + 2 * var(--pad)); max-width: none; margin-inline: calc(-1 * var(--pad)); border-radius: 0; }
 }
+
+/* 見出しを整理し、人数と理由の数字を強調する */
+.check-section { padding-top: 12px; }
+.section:has(+ .check-section) { padding-bottom: 12px; }
+.reason-heading { display: flex; align-items: baseline; justify-content: center; gap: 7px; color: #91651c; margin: 6px 0 18px; }
+.reason-heading strong { font-family: Georgia, serif; font-size: clamp(80px, 24vw, 110px); font-style: italic; font-weight: 700; line-height: 1; color: #b98222; text-shadow: 1px 2px 0 #f5e2c0; }
+.reason-heading > span { font-size: clamp(26px, 7vw, 34px); }
+.flow-limit { text-align: center; margin-top: 28px; padding: 20px 12px; border: 2px solid var(--gold); }
+.flow-limit__label { display: block; color: #91651c; font-weight: 700; margin-top: 10px; letter-spacing: .16em; }
+.flow-limit__count { display: block; color: #91651c; font-size: 25px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
+.flow-limit__count strong { font-size: 56px; }
+@media (max-width: 719px) {
+  .concept-approach, .cycle-normalize-img { width: calc(100% + 2 * var(--pad)); max-width: none; margin-inline: calc(-1 * var(--pad)); border-radius: 0; }
+}
