@@ -336,7 +336,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .num-card { background: #fffbf8; border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; }
 .num-card__head {
   display: flex; align-items: center; gap: 12px;
-  background: var(--navy); color: #fff; padding: 15px 18px;
+  background: #f5e2c0; color: #000000; padding: 15px 18px;
 }
 .num-card__no {
   flex: none; width: 26px; height: 26px; border-radius: 50%;
@@ -524,3 +524,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ヘアサイクル正常化の画像 */
 .cycle-normalize-img { display: block; width: 100%; height: auto; border-radius: 10px; margin: 32px 0 0; }
+
+/* 条件の案内と次の文章の間を詰める */
+.condition-section { padding-bottom: 12px; }
+.method-intro { padding-top: 0; }
