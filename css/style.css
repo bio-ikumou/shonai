@@ -528,3 +528,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* 条件の案内と次の文章の間を詰める */
 .condition-section { padding-bottom: 12px; }
 .method-intro { padding-top: 0; }
+
+/* スマホでの読みやすさと各案内の間隔 */
+.concept-lead { font-size: clamp(19px, 5.2vw, 26px); font-weight: 700; line-height: 1.65; color: var(--ink); }
+.concept-lead span { font-size: .72em; color: var(--gold); }
+.concept-section { padding-bottom: 12px; }
+.results-section { padding-top: 12px; }
+.limit-badge { width: 100%; padding: 18px 16px; border: 2px solid var(--gold-soft); text-align: center; background: linear-gradient(135deg, #a63f2e, #c85d42); }
+.limit-badge__label { display: block; font-size: 14px; letter-spacing: .18em; }
+.limit-badge__main { display: block; font-size: 25px; line-height: 1.35; }
+.limit-badge__main strong { color: #fff0bc; font-size: 52px; }
+.method-intro { padding-bottom: 0; }
+.cause-section { padding-top: 12px; }
+.bg-cta-light { background: linear-gradient(135deg, #f5e2c0, #faf0df); color: var(--ink); }
+.bg-cta-light .cta-block__title { color: var(--ink); }
+.bg-cta-light .cta-block__sub, .bg-cta-light .cta-block__foot { color: var(--body); }
+.bg-cta-light .cta-block__big { color: #91651c; }
+@media (max-width: 719px) {
+  .cond-img { width: calc(100% + 2 * var(--pad)); max-width: none; margin-inline: calc(-1 * var(--pad)); border-radius: 0; }
+}
