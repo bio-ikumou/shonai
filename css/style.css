@@ -354,30 +354,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 .cycle-foot { text-align: center; margin-top: 24px; font-family: var(--serif); color: var(--ink); font-size: clamp(15px, 4vw, 17px); line-height: 1.9; }
 .cycle-foot .em { color: var(--gold); font-weight: 700; }
 
-/* Comparison chart */
-.compare { margin-top: 34px; }
-.compare__img { width: 100%; height: auto; display: block; margin: 0 auto; }
-.compare__label { color: var(--ink); font-size: 13px; font-weight: 700; margin: 6px 0; }
-.compare__row {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; align-items: end;
-  border-bottom: 2px solid #cbd0da; padding: 0 6px; height: 140px;
-}
-.compare__bar { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
-.compare__bar .cap { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
-.compare__bar .bar { width: 58%; max-width: 62px; border-radius: 4px 4px 0 0; }
-.compare__bar.is-gold .bar { background: var(--gold); }
-.compare__bar.is-navy .bar { background: var(--navy); }
-.compare__names { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 8px; }
-.compare__names span { text-align: center; font-size: 12px; color: var(--body); }
-.compare__foot { text-align: center; font-weight: 700; color: var(--ink); margin-top: 20px; font-size: clamp(14px, 3.8vw, 16px); }
-.compare__foot .em { color: var(--gold); }
-
-/* =========================================================================
-   MESSAGE
-   ========================================================================= */
-.msg-photo { width: 280px; max-width: 100%; aspect-ratio: 280 / 241; border-radius: 14px; overflow: hidden; margin: 6px auto 22px; box-shadow: var(--shadow); }
-.msg-quote { text-align: center; font-weight: 700; color: var(--ink); font-size: clamp(16px, 4.4vw, 19px); line-height: 1.7; margin-bottom: 22px; }
-
 /* =========================================================================
    FLOW / STEP
    ========================================================================= */
@@ -540,9 +516,6 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* 見出しを整理し、人数と理由の数字を強調する */
 .check-section { padding-top: 12px; }
 .section:has(+ .check-section) { padding-bottom: 12px; }
-.reason-heading { display: flex; align-items: baseline; justify-content: center; gap: 7px; color: #91651c; margin: 6px 0 18px; }
-.reason-heading strong { font-family: Georgia, serif; font-size: clamp(80px, 24vw, 110px); font-style: italic; font-weight: 700; line-height: 1; color: #b98222; text-shadow: 1px 2px 0 #f5e2c0; }
-.reason-heading > span { font-size: clamp(26px, 7vw, 34px); }
 .flow-limit { text-align: center; margin-top: 28px; padding: 20px 12px; border: 2px solid var(--gold); }
 .flow-limit__label { display: block; color: #91651c; font-weight: 700; margin-top: 10px; letter-spacing: .16em; }
 .flow-limit__count { display: block; color: #91651c; font-size: 25px; font-weight: 700; line-height: 1.25; margin-bottom: 10px; }
@@ -550,3 +523,23 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 719px) {
   .concept-approach, .cycle-normalize-img { width: calc(100% + 2 * var(--pad)); max-width: none; margin-inline: calc(-1 * var(--pad)); border-radius: 0; }
 }
+
+/* 新しい案内画像と強調文 */
+.progress-message { width: 100%; height: auto; margin-top: 24px; }
+.warning-emphasis { padding: 16px; margin-top: 20px; background: #f4e8d2; border-left: 4px solid var(--gold); color: var(--ink); }
+.future-emphasis { display: block; margin-top: 16px; padding: 18px 12px; text-align: center; font-family: var(--serif); font-size: clamp(21px, 5.8vw, 29px); line-height: 1.65; color: #91651c; border-block: 1px solid var(--gold-soft); background: linear-gradient(135deg, #fff9ed, #f5e2c0); }
+/* 標準の開閉要素でキーボード操作にも対応する */
+.faq-q { cursor: pointer; list-style: none; }
+.faq-q::-webkit-details-marker { display: none; }
+.faq-q:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
+.faq-toggle { margin-left: auto; width: 20px; flex: none; text-align: center; color: #91651c; }
+.faq-toggle::before { content: '+'; font-size: 24px; }
+.faq-item[open] .faq-toggle::before { content: '−'; }
+/* LINEのリンクと計測用クラスを保ち、見た目を支給画像にする */
+.btn-line:has(.line-booking-image), .sticky-cta .btn-line:has(.line-booking-image) { padding: 0; background: transparent; border-radius: 0; box-shadow: none; }
+.line-booking-image { display: block; width: 100%; height: auto; }
+.site-header .btn-line--sm { flex: 0 0 112px; width: 112px; }
+.sticky-cta .btn-line:has(.line-booking-image) { width: 49%; max-width: 230px; }
+
+/* 支給された施術例の写真を変えず、地域の円だけ既存表紙から重ねる */
+.hero-region-layer { position: absolute; top: 0; left: 0; pointer-events: none; clip-path: inset(26.5% 0 59.375% 74.8%); }
