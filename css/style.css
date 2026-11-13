@@ -529,3 +529,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 .trial-section .flow-limit { padding-block: 10px; margin-top: 16px; }
 .trial-section .flow-limit__label { margin-top: 0; }
 .trial-section .flow-limit__count { margin-bottom: 0; }
+
+/* 年齢案内の予約エリアをコンパクトにする */
+.section:has(+ .age-cta) { padding-bottom: 12px; }
+.age-cta { padding-block: 16px 10px; }
+.age-cta .cta-pill { padding: 6px 16px; }
+.age-cta .cta-block__sub { margin: 8px 0 4px; }
+.age-cta .cta-block__title { margin: 4px 0; }
+.age-cta .cta-block__big { margin: 4px 0 0; }
+.age-cta + .section { padding-top: 16px; }
