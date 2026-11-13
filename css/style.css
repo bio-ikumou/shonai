@@ -522,3 +522,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* 支給された施術例の写真を変えず、地域の円だけ既存表紙から重ねる */
 .hero-region-layer { position: absolute; top: 0; left: 0; pointer-events: none; clip-path: inset(26.5% 0 59.375% 74.8%); }
+
+/* 限定人数の案内と次の見出しを近づける */
+.trial-section { padding-bottom: 8px; }
+.condition-section { padding-top: 8px; }
+.trial-section .flow-limit { padding-block: 10px; margin-top: 16px; }
+.trial-section .flow-limit__label { margin-top: 0; }
+.trial-section .flow-limit__count { margin-bottom: 0; }
