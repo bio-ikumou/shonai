@@ -561,3 +561,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 719px) {
   .concept-approach, .cycle-normalize-img { width: calc(100% + 2 * var(--pad)); max-width: none; margin-inline: calc(-1 * var(--pad)); border-radius: 0; }
 }
+
+
+/* ★ 1画面目を画像にした形（千代田と同じ） */
+.hero-booking { padding-top: 0; }
+.hero-booking .tap-hint { margin-top: 0; }
+
+.hero-image { position: relative; }
+.hero-image > img { width: 100%; height: auto; }
+.hero-image__title {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap;
+}
