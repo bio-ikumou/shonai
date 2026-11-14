@@ -548,3 +548,18 @@ ul { margin: 0; padding: 0; list-style: none; }
 .reassurance-section .emph__sub .big { color: #91651c; }
 
 .site-header__sub { font-size: clamp(7px, 1.9vw, 9px); letter-spacing: .04em; white-space: nowrap; }
+
+/* 現在版の配色を保ち、承認済みのレイアウトを調整する。 */
+.ba-photos { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:6px; align-items:start; }
+.ba-arrow { display:none; }
+.ba-photo { min-width:0; }
+.trial-section .container { padding-inline:22px; }
+.refined-limit { position:relative; border:1px solid #c59a4e; border-top:4px solid #c59a4e; background:linear-gradient(120deg,#fffaf0,#f5e7c8); border-radius:4px; padding:18px 12px!important; margin-top:18px!important; }
+.refined-limit .flow-limit__label { color:#64513a; font-size:12px; letter-spacing:.12em; margin:0; }
+.refined-limit .flow-limit__count { display:flex; justify-content:center; align-items:baseline; gap:7px; color:#8e5d17; font-family:var(--serif); margin:1px 0 5px; }
+.refined-limit .flow-limit__count span { font-size:23px; font-weight:700; }
+.refined-limit .flow-limit__count strong { font-family:Georgia,serif; font-size:78px; line-height:1.05; color:#b55c35; font-weight:400; }
+.flow-limit__note { display:block; color:#76644d; font-size:10px; font-weight:400; line-height:1.6; }
+@media(min-width:600px){ .trial-section .container {padding-inline:32px;} }
+
+.moved-approach {padding-block:8px 0;} .moved-approach .concept-approach {margin-top:0;}
