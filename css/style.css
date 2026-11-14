@@ -538,3 +538,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 .age-cta .cta-block__title { margin: 4px 0; }
 .age-cta .cta-block__big { margin: 4px 0 0; }
 .age-cta + .section { padding-top: 16px; }
+
+/* 上部のLINE予約を大きくし、予約案内との空きを取り除く */
+.site-header { gap: 8px; }
+.site-header > div { flex: 1; min-width: 0; }
+.site-header .btn-line--sm { flex: 0 0 46%; width: 46%; max-width: 210px; overflow: hidden; }
+.site-header .line-booking-image { margin-block: -4%; }
+.hero-booking .tap-hint { margin-bottom: 0; }
+.hero-booking .btn-line { display: block; overflow: hidden; }
+.hero-booking .line-booking-image { margin-block: -4%; }
+.reassurance-section .emph__sub { color: var(--body); }
+.reassurance-section .emph__sub .big { color: #91651c; }
+
+.site-header__sub { font-size: clamp(7px, 1.9vw, 9px); letter-spacing: .04em; white-space: nowrap; }
