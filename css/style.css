@@ -563,3 +563,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media(min-width:600px){ .trial-section .container {padding-inline:32px;} }
 
 .moved-approach {padding-block:8px 0;} .moved-approach .concept-approach {margin-top:0;}
+
+/* ご提供画像を横幅いっぱいに、間隔を空けず連続表示する。 */
+.care-image-sequence { margin:0; padding:0; }
+.care-image-sequence img { display:block; width:100%; height:auto; margin:0; }
