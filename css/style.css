@@ -579,3 +579,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 .sticky-cta { background:#f4e7cc; border-top:1px solid #ddc89e; box-shadow:0 -4px 18px rgba(96,72,33,.10); }
 .sticky-cta__price { color:#51493f; }
 .sticky-cta__price b { color:#91651c; }
+
+/* 予約案内画像を縦横比を保って横幅いっぱいに表示する。 */
+.reservation-offer { margin:0; padding:0; }
+.reservation-offer__link { display:block; }
+.reservation-offer img { display:block; width:100%; height:auto; }
+.reservation-offer__link:focus-visible { outline:3px solid #91651c; outline-offset:-3px; }
