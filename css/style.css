@@ -567,3 +567,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* ご提供画像を横幅いっぱいに、間隔を空けず連続表示する。 */
 .care-image-sequence { margin:0; padding:0; }
 .care-image-sequence img { display:block; width:100%; height:auto; margin:0; }
+
+/* LP12の末尾に含まれる余白だけを表示範囲から外す。 */
+.care-image-trim { aspect-ratio:1080 / 1640; overflow:hidden; }
+
+/* LP14はご指定の下段だけを残し、上段の図をLP6に差し替える。 */
+.care-image-tail { overflow:hidden; }
+.care-image-tail img { margin-top:calc(-100% * 1035 / 1080); }
