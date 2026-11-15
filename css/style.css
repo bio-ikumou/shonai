@@ -574,3 +574,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* LP14はご指定の下段だけを残し、上段の図をLP6に差し替える。 */
 .care-image-tail { overflow:hidden; }
 .care-image-tail img { margin-top:calc(-100% * 1035 / 1080); }
+
+/* 固定予約バーを本文に馴染む明るいベージュに揃える。 */
+.sticky-cta { background:#f4e7cc; border-top:1px solid #ddc89e; box-shadow:0 -4px 18px rgba(96,72,33,.10); }
+.sticky-cta__price { color:#51493f; }
+.sticky-cta__price b { color:#91651c; }
