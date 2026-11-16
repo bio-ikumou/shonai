@@ -585,3 +585,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .reservation-offer__link { display:block; }
 .reservation-offer img { display:block; width:100%; height:auto; }
 .reservation-offer__link:focus-visible { outline:3px solid #91651c; outline-offset:-3px; }
+
+/* 施術の流れを隙間なく表示し、LP19の下部余白だけを省く。 */
+.care-flow-images { margin:0; padding:0; }
+.care-flow-images img { display:block; width:100%; height:auto; margin:0; }
+.care-flow-last { aspect-ratio:1080 / 1160; overflow:hidden; }
