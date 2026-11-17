@@ -606,3 +606,15 @@ body, .page, .site-header, .bg-white, .bg-cream, .bg-cream2, .bg-cta-light,
 .care-story-tail { overflow:hidden; }
 .care-story-tail img { margin-top:calc(-100% * 1650 / 1080); }
 .care-program-booking { padding-block:12px; }
+
+/* 説明部分だけを拡大し、下の装飾と症例写真は元の幅で保つ。 */
+.results-approach-zoom { aspect-ratio:1080 / 890; overflow:hidden; }
+.results-approach-zoom img { width:108%; max-width:none; margin-left:-4%; margin-top:calc(-100% * 25 / 1080); }
+.results-lp20-remainder { overflow:hidden; }
+.results-lp20-remainder img { margin-top:calc(-100% * 847 / 1080); }
+
+/* 最後の予約案内だけを画像へ差し替え、既存の予約ボタンを維持する。 */
+.final-reservation { padding-block:12px; }
+.final-reservation .cta-block { padding-inline:0; }
+.final-reservation-image { display:block; width:100%; height:auto; margin-bottom:12px; }
+.final-reservation .btn-line { width:calc(100% - 2 * var(--pad)); }
