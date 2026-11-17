@@ -600,3 +600,9 @@ body, .page, .site-header, .bg-white, .bg-cream, .bg-cream2, .bg-cta-light,
 .results-image-sequence { margin:0; padding:0; }
 .results-image-sequence img { display:block; width:100%; height:auto; margin:0; }
 .results-booking { padding-block:12px; }
+
+/* 金色の案内枠の直後へ追加画像を挿入し、元の見出しへ続ける。 */
+.care-story-top { aspect-ratio:1080 / 1650; overflow:hidden; }
+.care-story-tail { overflow:hidden; }
+.care-story-tail img { margin-top:calc(-100% * 1650 / 1080); }
+.care-program-booking { padding-block:12px; }
